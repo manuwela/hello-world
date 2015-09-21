@@ -1,5 +1,7 @@
 image: manuwela/dronedocker
 name: hello
+ports:
+  - 9090:9090
 script:  
   - mvn clean install tomcat7:run
   
