@@ -1,4 +1,5 @@
-FROM java:8
-ADD hello-world.jar app.jar
-RUN bash -c 'touch /app.jar'
-ENTRYPOINT ["java", "-jar","/app.jar"]
+FROM tomcat
+MAINTAINER manuwela
+ADD hello-world.war /usr/local/tomcat/webapps/
+
+CMD ["catalina.sh", "run"]
