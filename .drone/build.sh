@@ -10,5 +10,5 @@ mvn clean install
 
 cd target 
 
-docker build -t manuwela/hello-world .  
-docker push manuwela/hello-world
+#docker build -t manuwela/hello-world .  
+#docker push manuwela/hello-world
