@@ -2,3 +2,7 @@ image: manuwela/dronedocker
 name: hello
 script:  
   - ./.drone/build.sh
+deploy:
+  bash:
+    script:
+      - ./.drone/deploy.sh
