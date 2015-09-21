@@ -1,4 +1,5 @@
 image: manuwela/dronedocker
 name: hello
 script:  
-  - mvn clean install
+  - mvn clean install tomcat7:run
+  
