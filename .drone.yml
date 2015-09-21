@@ -1,4 +1,4 @@
 image: manuwela/dronedocker
 name: hello
 script:  
-  - ./.drone/build.sh
+  - mvn clean install
