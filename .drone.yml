@@ -1,4 +1,4 @@
-image: jamesdbloom/docker-java7-maven
+image: manuwela/dronedocker
 name: hello
 script:
   - mvn clean install
