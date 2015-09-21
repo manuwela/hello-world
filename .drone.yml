@@ -1,4 +1,4 @@
-image: maven/maven:3.3.3-jdk-8-onbuild
-name: maps
+image: java:8
+name: hello
 script:
   - mvn clean install
