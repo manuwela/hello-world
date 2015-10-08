@@ -1,0 +1,26 @@
+{
+    "builders": [
+        {
+            "type": "docker",
+            "image": "mkanade/hello",
+            "export_path": "image.tar"
+        }
+    ],
+
+    "post-processors": [
+        [
+            {
+                "type": "docker-import",
+                "repository": "mkanade/hello",
+                "tag": "latest"
+            },
+            {
+                "type": "docker-push",
+                "login": 1,
+                "login_email": "manuwela.kanade@gslab.com",
+                "login_username": "mkanade",
+                "login_password": "nbv12345"
+            }
+        ]
+    ]
+}
