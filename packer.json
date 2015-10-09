@@ -21,14 +21,8 @@
                 "metadata": {
                   "created_at": "{{timestamp}}"
                 }
-            },
-            {
-                "type": "docker-push",
-                "login": 1,
-                "login_email": "manuwela.kanade@gslab.com",
-                "login_username": "mkanade",
-                "login_password": "nbv12345"
             }
+            
         ]
     ]
 }
